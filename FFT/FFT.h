@@ -11,15 +11,20 @@
 
 #include <stdio.h>
 #include <vector>
+#include <iostream>
+#include <complex>
+#include <math.h> 
 
 using namespace std;
 
 namespace FFTDoron
 {
+    const complex<float> j (0.0, 1.0);
+    const float pi = 3.14159265359;
     class FFTDoron
     {
     public:
-        static vector<float> fft(vector<float> signal);
+        static vector<complex<float>> fft(vector<complex<float>> signal);
     };
 }
 
