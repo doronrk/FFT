@@ -11,9 +11,13 @@
 
 using namespace std;
 
-int main(int argc, const char * argv[]) {
-    
-    int sigArr[] = {1,0,0,0,0,0,0};
+int main(int argc, const char * argv[])
+{
+    complex<float> j (0.0, 1.0);
+    //int sigArr[] = {1,0,0,0,0,0,0,0};
+    //int sigArr[] = {0,1,2,3,4,5,6,7};
+    //float sigArr[] = {.1, .5, .1, .2, -.3, -.9, .4, .15};
+    complex<float> sigArr[] = {j*=3, .5, .1, .2, -.3, -.9, .4, .15};
     vector<complex<float>> signal;
     for (int i = 0; i < 8; ++i)
     {

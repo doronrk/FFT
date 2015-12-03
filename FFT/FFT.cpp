@@ -26,13 +26,13 @@ namespace FFTDoron
         vector<complex<float>> odd = vector<complex<float>>(N/2);
         for (int i = 0; i < N; ++i)
         {
-            if (i % 2 ==0)
+            if (i % 2 == 0)
             {
-                even[i/2] = spec[i];
+                even[i/2] = signal[i];
             }
             else
             {
-                odd[(i-1)/2] = spec[i];
+                odd[(i-1)/2] = signal[i];
             }
         }
         even = fft(even);
