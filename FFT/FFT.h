@@ -24,7 +24,9 @@ namespace FFTDoron
     class FFTDoron
     {
     public:
-        static vector<complex<float>> fft(vector<complex<float>> signal);
+        static void fft(vector<complex<float>>* signal);
+        static void fftHelper(vector<complex<float>>* signal, int start, int incr);
+        static vector<complex<float>> fftOrig(vector<complex<float>> signal);
     };
 }
 
